@@ -1,11 +1,4 @@
-class Node:
-    def __init__(self, val: int, min: int):
-        self.val = val
-        self.min = min
-
-    def __str__(self):
-        return f"{{ val: {self.val}, min: {self.min} }}"
-
+from common.models import Node
 
 class MinStack:
     def __init__(self):

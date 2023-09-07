@@ -1,7 +1,5 @@
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from common.functions import ListNode
+from common.functions import print_list
 
 
 def reverseBetween(head, left, right):
@@ -19,15 +17,6 @@ def reverseBetween(head, left, right):
     left_prev.next.next = cur  # type: ignore
     left_prev.next = prev
     return dummy.next
-
-
-def print_list(head):
-    current = head
-    l = []
-    while current is not None:
-        l.append(current.val)
-        current = current.next
-    print(l)
 
 
 def main():
